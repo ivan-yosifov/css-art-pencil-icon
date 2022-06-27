@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pencil Icon</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #29323c;
+		}
+		.container{
+			width: 600px;
+			height: 600px;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%;
+		}
+		.pencil{
+			width: 100px;
+			height: 485px;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			transform: rotate(45deg);
+		}
+		.eraser{
+			width: 100px;
+			height: 45px;
+			background: #f56363;
+			border-top-left-radius: 16px;
+			border-top-right-radius: 16px;
+		}
+		.ferrule{
+			width: 100px;
+			height: 20px;
+			background: #d0c5b1;
+		}
+		.side{
+			width: 33.33%;
+			height: 320px;
+			position: absolute;
+		}
+		.side1{
+			background: #fed700;
+			left: 0;
+		}
+		.side2{
+			background: #ffc700;
+			left: 33.33%;
+		}
+		.side3{
+			background: #ffb700;
+			left: 66.66%;
+		}
+		.side:after{
+			content: '';
+			width: 24px;
+			height: 22px;
+			background: inherit;
+			position: absolute;
+			bottom: -11px;
+			border-radius: 0 0 0 22px;
+			transform: rotate(-44deg);
+			left: 5px;
+			z-index: 1;
+		}
+		.collar{
+			width: 0;
+			height: 0;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-top: 100px solid #ffefbb;
+			position: absolute;
+			top: 385px;
+		}
+		.tip{
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 40px solid #656564;
+			position: absolute;
+			top: 445px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="pencil">
+			<div class="eraser"></div>
+			<div class="ferrule"></div>
+			<side class="side side1"></side>
+			<side class="side side2"></side>
+			<side class="side side3"></side>
+			<div class="collar"></div>
+			<div class="tip"></div>
+		</div>
+	</div>
+</body>
+</html>
